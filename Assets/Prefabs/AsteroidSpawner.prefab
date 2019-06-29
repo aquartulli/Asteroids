@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2294518511985635806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4905220057765895573}
+  - component: {fileID: 3056990609430923891}
+  m_Layer: 0
+  m_Name: AsteroidSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4905220057765895573
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294518511985635806}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3056990609430923891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294518511985635806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc16427d9c7c8b741b96902c80411b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _SpawnIntervalInSeconds: 2
+  _SpawnDistance: 50
+  _MinAsteroidSpeed: 1
+  _MaxAsteroidSpeed: 15
+  _AsteroidSpawnInfos:
+  - _Weight: 5
+    _AsteroidPrefab: {fileID: 2494081967691547133, guid: e034fcd5f360e0f46a77a763850d4fd4,
+      type: 3}
+  - _Weight: 3
+    _AsteroidPrefab: {fileID: 6832346888964543513, guid: 05f3b276ce5c02941a177cb80347980c,
+      type: 3}
+  - _Weight: 2
+    _AsteroidPrefab: {fileID: 5542643720293993284, guid: 69e41396ff267c641a764fe734f460f5,
+      type: 3}
+  - _Weight: 1
+    _AsteroidPrefab: {fileID: 7012378530863124732, guid: b65bdcbf5ac407146adca648a92677b0,
+      type: 3}
+  _SpawnAngleDeviation: 45
+  _AsteroidSpawnedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: AsteroidSpawnedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
